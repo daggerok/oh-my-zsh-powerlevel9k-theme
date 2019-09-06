@@ -26,4 +26,6 @@ POWERLEVEL9K_TIME_FORMAT='%D{%S:%M:%H}'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=false
 ```
 
-Done!
+finally install [Hack Nerd Regular Font](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf) in your system to see all awesomness!
+
+An we are done!
