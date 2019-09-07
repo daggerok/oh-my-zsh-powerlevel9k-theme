@@ -12,6 +12,8 @@ sudo su -- robot
 cd
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 vi ~/.zshrc
 
 #ZSH_THEME="robbyrussell"
@@ -24,6 +26,16 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator time)
 POWERLEVEL9K_TIME_FORMAT='%D{%S:%M:%H}'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=false
+
+plugins=(
+ zsh-syntax-highlighting
+ zsh-autosuggestions
+ git
+ docker
+ extract
+ mvn
+ npm
+)
 ```
 
 finally install [Hack Nerd Regular Font](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf) in your system to see all awesomness!
